@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js">
+        </script>
+        <script>
+            $(function(){
+                $("dd:not(:first)").css( "display", "none");
+                $("dl dt").click( function(){
+                    if ( $("+dd", this).css( "display") == "none"){
+                        $(this).siblings( "dd").slideUp("slow");
+                        $("+dd", this).slideDown( "slow");
+                    }
+                })
+            })
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
