@@ -1,0 +1,15 @@
+header, nav, section,footer{
+
+
+    border: solid 1px red;
+
+} header{
+    background-color: aqua;
+    width: 50%;
+}nav {
+    width: 45%;
+    background-color: aquamarine;
+}
+img{
+    width: 450px;
+}
