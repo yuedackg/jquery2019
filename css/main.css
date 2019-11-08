@@ -1,16 +1,24 @@
-html, body { 
+html { 
+    background-color: burlywood;
     width: 100%;
     margin-right: auto;
     margin-left: auto; 
     padding: 0; 
     font-family: 'Helvetica', 'Arial'; /* initial fonts */
    }
-   #top-bar { 
-    width: 100%; 
-    background: #F1F1F1; /* light gray */ 
-    border-bottom: 1px solid #D4D4D4; /* dark gray "underline" */ 
-    height: 25px;
-   }
+body{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto; 
+    padding: 0; 
+    font-family: 'Helvetica', 'Arial'; /* initial fonts */
+
+}
+  
    .normal-wrapper { 
     width: 70%; 
     margin: 0 auto; 
@@ -23,53 +31,51 @@ html, body {
     font-size: 60pt; 
     float: left;
    }
-   h1 { 
-    float: left; 
-    margin: 21px 0 0 25px;
+   #tieude{
+    padding-left: 5%;
+    padding-top: 2%; 
+    font-size: 37pt;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
    }
-   #navbar { 
+   #menu { 
     list-style-type: none; /* remove bullet points */ 
-    margin: 29px 0 0 0; 
-    padding: 0; float: right; 
-    font-size: 16pt;
+    font-size: 22pt;
+    padding-left: 50%;
    }
-   #navbar li { 
+   #menu li { 
     display: inline; /* make items horizontal */
    }
-   #navbar li a:link, #navbar li a:visited, #navbar li a:active { 
+   #menu li a:link, #menu li a:visited, #menu li a:active { 
     text-decoration: none; /* remove underline */ 
     color: #000000; 
     padding: 0 16px 0 10px; /* space links apart */ 
     margin: 0; 
     border-right: 2px solid #B4B4B4; /* divider */
    }
-   #navbar li a:link.last-link { 
+   #menu li a:link.last-link { 
     /* remove divider */ 
     border-right: 0px;
    }
-   #navbar li a:hover { 
+   #menu li a:hover { 
     /* change color on hover (mouseover) */ 
     color: #EB6361;
    }
-   #top-color-splash { 
-    width: 100%; 
-    height: 4px; 
-    background: #EB6361;
-   }
+   
    #sec1,#sec5,#sec7{ 
-    width: 40%; 
+    width: 50%; 
     float: left; 
     box-sizing: border-box; /* ensure padding and borders do not increase the size */ 
     margin-top: 20px;
    }
    #sec3{ 
-    width: 40%; 
+    width: 50%; 
     float: right; 
     box-sizing: border-box; /* ensure padding and borders do not increase the size */ 
     margin-top: 20px;
    }
    #sec2,#sec6,#sec8 { 
-    width: 60%; 
+    width: 50%; 
     float: left; 
     box-sizing: border-box; /* ensure padding and borders do not increase the size */ 
     padding-left: 40px; 
@@ -87,7 +93,10 @@ html, body {
     background: #363636; 
     color: #FFFFFF; 
     text-align: center; 
-    padding: 15px 0;
+    position: fixed;
+    left: 15%;
+    bottom: 0;
+    width: 70%;
    }
    h3 { 
     font-weight: normal; 
@@ -110,3 +119,21 @@ html, body {
    #sec5,#sec6,#sec7,#sec8{
        display: none;
    }
+   section{
+       height: 500px;
+   }
+  header{
+      position: fixed;
+      width: 70%;
+      height: 170px;
+      left: 15%;
+      right: 0;
+      background-color: lightblue;
+        
+    }
+    #sec1,#sec2,#sec5,#sec6,#sec7,#sec8{
+        margin-top: 175px;
+    }
+    #cuoitrang {
+        padding-left: 56%;
+    }
