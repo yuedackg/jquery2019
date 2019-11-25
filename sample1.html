@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Yoshihiro UEDA's text</title>
+        <link rel="stylesheet" href="sample/sample.css">
+        <script src="http://www.google.com/jsapi"></script>
+        <script>
+        google.load( "jquery", "1.3.2");
+        </script>
+        <script>
+        $(function (){
+            $( "dd:not(:first)").css( "display", "none");
+            $("dl dt").click( function(){
+                if( $("+dd", this).css("display") == "none"){
+                    $(this).siblings( "dd") .slideUp("slow");
+                    $("+dd",this).slideDown( "slow");
+                }
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <section>
+            <dl>
+                <dt>
+                    text1
+                </dt>
+                <dd>
+                    <p>text1 ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+                    
+                </dd>                <dt>
+                    text2
+                </dt>
+                <dd>
+                    <p>text2 ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+                    
+                </dd>                <dt>
+                    text2
+                </dt>
+                <dd>
+                    <p>text2 ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+                    
+                </dd>                <dt>
+                    text3
+                </dt>
+                <dd>
+                    <p>text3 ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+                    
+                </dd>
+            </dl>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</html>
