@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+p{
+    width: 400px;
+    word-break: normal;
+}
 dl{
     width: 400px;
     margin: 50px auto;
