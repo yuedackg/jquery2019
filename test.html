@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Google jQuery API.
+        </title> 
+        <script src="http://www.google.com/jsapi"></script>
+        <script >
+            google.load( "jquery", "1.3.2");
+
+        </script>
+        <link rel="stylesheet" href="test.css">
+
+    </head>
+    <body>
+        <h1>
+            Google jQuery API.
+        </h1>
+        <p>
+
+        </p>
+        <section>
+            <ul>
+                <li id="first">あああ<strong>ああああああああ</strong>あああああああああああああああああ</li>
+                <li id="second" class="B">いいいいいい<em>いいいいいい</em>いいいいいいいいいいいいいいいいい</li>
+                <li id="therd" class="D" >ううううう<span>うううううう</span>ううううううううううううううううううう</li>
+                <li id="fourth" class="D">えええええええええええええええええええええええええええええええええ</li>
+            </ul>
+        </section>
+        <script>
+            $(function(){
+                $("li:odd").css( "color", "red");
+            });
+            $(function(){
+                $("#second").prepend( "<span>hello world");
+            })
+        </script>
+    </body>
+</html>
