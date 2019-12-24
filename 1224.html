@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Yoshihiro UEDA
+    </title>
+    <script src="http://www.google.com/jsapi">
+    </script>
+    <script>
+        google.load("jquery", "1.3.2");
+    </script>
+    <script>
+
+
+        $(function () {
+            $("#prepend").click(
+                function () {
+                    $("p").prepend("this is prepend line.<br>");
+                    return false;
+                }
+            );
+        });
+
+        $(function () {
+            $("#append").click(
+                function () {
+                    $("p").append("this is append line.<br>");
+                    return false;
+                }
+            );
+        });
+        $(function () {
+            $("#moveTo").click(
+                function () {
+                    $("p#first").prependTo("#afterHR");
+                }
+            );
+        });
+        $(function () {
+            $("#btnUseStrongTag").click(
+                function () {
+                    $("p#line2").wrap("<strong></strong>");
+                }
+            );
+        });
+        $(function () {
+            $("#btnRepleaceText").click(
+                function () {
+                    $("p#first").replaceWith("<h1>first line is update.</h1>");
+                }
+            )
+        })
+        $(function () {
+            $("#btnChangeTitle").click(
+                function () {
+                    var gakusekiNo;
+                    var gakusekiName;
+                    gakusekiNo = $("input[name='number']").val();
+                    gakusekiName = $("input[name='YourName']").val();
+                    var titleString = gakusekiNo + " : " + gakusekiName;
+                    alert(titleString);
+                    $("h1").replaceWith(titleString);
+
+                    return false;
+                }
+            );
+
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <h1>text() method test.</h1>
+    <h2>page 58.</h2>
+    <p id="first">before change<br></p>
+    <p id="line2">function text() is text changed.<br></p>
+    <button id="btnTextChange">
+        text changed.
+    </button>
+    <button id="btnTextChange2"> text changed. </button>
+    <button id="prepend"> prepend text. </button>
+    <button id="append"> append text. </button>
+    <button id="moveTo"> move p tag block.</button>
+    <button id="btnUseStrongTag"> use strong tag</button>
+    <button id="btnRepleaceText">replace text.</button>
+
+    <hr>
+    <p id="afterHR">this is after HR tag.</p>
+
+    <hr>
+    <form action="">
+        <span>Number :</span> <input type="text" name="number"><br>
+        <span> Your Name: </span><input type="text" name="YourName"><br>
+        <button id="btnChangeTitle"> change header title</button>
+    </form>
+</body>
+
+</html>
