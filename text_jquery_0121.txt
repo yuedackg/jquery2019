@@ -1,0 +1,31 @@
+jQuery 講座
+
+**ファイルは、学生サーバに保存してください
+　\\192.168.16.201\01 生徒用\大橋校\留学生\405PM_jquery
+　18000-3.html　　[HTMLファイル]
+
+**ベースになるHTMLを入力します。
+
+** css(　param1, param2) ・・・
+ param1 のプロパティの値を、param2にセットする
+
+ ** before（ text ）
+  セレクタの前に、textを入れる
+
+**　after( text)
+　セレクタの後に、textを入れる
+
+** prependTo( pos)、insertBefore（　pos）
+　対象のセレクタを、セレクタposの先頭に移動する。
+
+** wrap( tag )
+  対象のセレクタを、タグで囲む
+
+** remove(  )
+  対象のセレクタから、tagを削除する
+
+** attr( atttrib , param )
+  対象のセレクタの属性attribに、paramを設定する
+
+** removeAttr( attrib)
+　セレクタから、属性attribを削除する

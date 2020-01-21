@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>sleeping....</title>
+    <script src="http://www.google.com/jsapi">
+    </script>
+    <script>
+        google.load("jquery", "1.3.2");
+    </script>
+    <script>
+    $( function(){
+        $( "li").css( "color", "red");
+    });
+    $(　function(){
+        $( "ul").before( "Do you enter text before string");
+        $( "h1").after( "do you insert text after h1?");
+    });
+    $(function(){
+        $( "#strNormal").wrap( "<strong></strong>");
+    });
+    $(function(){
+        $( "#strStrong").remove( );
+    })
+    $(function(){
+        // セレクタ　a　の属性　href　を　http://www.gooogle.co.jp　に
+        $("a").attr( "href", "http://www.yahoo.com.vn");
+
+        alert( $("a").attr( "href"));
+        $("a").removeAttr( "href");
+    });
+    </script>
+</head>
+
+<body>
+    <h1>title</h1>
+    <ul>
+        <li>gyuuniku</li>
+        <li>butaniku</li>
+        <li>suica</li>
+        <li>banana</li>
+
+    </ul>
+
+    <p>yakiniku daisuki kyou mo taberu   </p><br>
+    <p id="strStrong"><strong>yakiniku daisuki kyou mo taberu</strong>   </p><br>
+    <p id="strNormal">yakiniku daisuki kyou mo taberu   </p><br>
+
+    <a href="http://www.yahoo.co.jp">
+        yahoo Japan.
+    </a>
+    
+
+</body>
+
+</html>
