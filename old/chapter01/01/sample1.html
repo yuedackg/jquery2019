@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+ Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<title>アコーディオンパネル</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(function(){
+	$("dd:not(:first)").css("display","none");
+	$("dl dt").click(function(){
+		if($("+dd",this).css("display")=="none"){
+			$(this).siblings("dd").slideUp("slow");
+			$("+dd",this).slideDown("slow");
+		}
+	});
+});
+		</script>
+		<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+dl{
+	width:400px;
+	margin:50px auto;
+}
+dl dt{
+	background:#7CADB6;
+	border-bottom:1px solid #FFFFFF;
+	cursor:pointer;
+}
+dl dd{
+	border:1px solid #7CADB6;
+	border-top:none;
+	height:300px;
+}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<dl>
+				<dt>テキスト1</dt>
+				<dd>
+					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				</dd>
+				<dt>テキスト2</dt>
+				<dd>
+					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				</dd>
+				<dt>テキスト3</dt>
+				<dd>
+					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				</dd>
+			</dl>
+		</div>
+	</body>
+</html>
