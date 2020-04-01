@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="http://www.google.com/jsapi"></script>
+        <script>
+            google.load( "jquery", "1.3.2");
+        </script>
+        <script>
+            $(function(){
+                $("a:eq(0)").click( function(){
+                    $("img").attr( "src", "flower.jpg").attr( "alt", "flower");
+                    return false;
+
+                });
+                $("a:eq(1)").click( function(){
+                    $("img").attr( "src", "sea.jpg").attr( "alt", "Sea");
+                    return false;
+
+                });
+                $("a:eq(2)").click( function(){
+                    $("img").attr( "src", "jellyfish.jpg").attr( "alt", "jellyfish");
+                    return false;
+
+                });
+                $("a:eq(3)").click( function(){
+                    $("img").attr( "src", "building.jpg").attr( "alt", "Building");
+                    return false;
+
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <ul>
+            <li><a href="fower.jpg">花</a></li>
+            <li><a href="sea.jpg">Sea</a></li>
+            <li><a href="jellyfish.jpg">jellyfish</a></li>
+            <li><a href="building">Building</a></li>
+        </ul>
+        <p>
+            <img src="flower.jpg" alt="Flower picture">
+        </p>
+    </body>
+</html>
